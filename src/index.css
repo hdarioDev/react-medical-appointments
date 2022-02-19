@@ -1,0 +1,253 @@
+:root {
+  --white: white;
+  --colorTextos: #49454567;
+  --primary: #63bbe4;
+  --warning: #f35b28;
+  --colorTextosBlack: #201e1ea4;
+}
+html {
+  font-size: 62.5%;
+  min-height: 100%;
+  /* poppins */
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  min-height: 100%;
+  /* padding-bottom: 5rm; */
+  background-image: linear-gradient(
+    -225deg,
+    #873594 0%,
+    #5e5fa0 52%,
+    #63bbe4 100%
+  );
+  font-family: "Poppins", sans-serif;
+}
+/*
+HEADER
+*/
+
+.container--title {
+  height: 120px;
+
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container--title .title--icon {
+  height: 50px;
+  width: 50px;
+  background: url("./assets/icon.png");
+  background-size: cover;
+  margin-right: 12px;
+}
+
+.container--title h1 {
+  font-weight: 800;
+  font-size: 5rem;
+}
+/*
+BODY
+*/
+.container {
+  /* background-color: yellowgreen; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.container--form {
+  background-color: var(--white);
+  padding: 10px 0; /*10 arriba 0 abajo*/
+  margin-bottom: 15px;
+  width: 50%;
+  margin-left: 10%;
+  margin-right: 5%;
+  border-radius: 12px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+  min-height: 500px;
+}
+
+.container--form h2 {
+  font-weight: 800;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  color: var(--colorTextos);
+}
+
+.container--form-items {
+  display: flex;
+  flex-direction: column;
+}
+.form-items-group {
+  margin: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--colorTextos);
+}
+input,
+textarea {
+  padding-bottom: 5px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  border-bottom: 1px solid var(--colorTextos);
+  padding-top: 10px;
+  resize: none;
+  color: var(--colorTextosBlack);
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  /* color: var(--colorTextos); */
+}
+
+input:focus ~ .items-group-bar::before {
+  width: 100%;
+}
+textarea:focus ~ .items-group-bar::before {
+  width: 100%;
+}
+.items-group-bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.items-group-bar::before {
+  content: "";
+  height: 1px;
+  width: 0%;
+  position: absolute;
+  background-image: linear-gradient(
+    -225deg,
+    #873594 0%,
+    #5e5fa0 52%,
+    #63bbe4 100%
+  );
+  transition: 0.3s;
+  left: 0%;
+}
+.container--form-items button {
+  height: 40px;
+  border: none;
+  margin: 12px;
+  border-radius: 12px;
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/*LIST*/
+.container--list {
+  background-color: var(--white);
+  padding: 10px 0; /*10 arriba 0 abajo*/
+  margin-bottom: 15px;
+  width: 50%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 12px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+  line-height: 20px;
+  /* height: 500px; */
+}
+.container--list h2 {
+  font-weight: 800;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  color: var(--colorTextos);
+}
+/*
+ERROR
+*/
+.err-sms {
+  color: var(--white);
+  height: 35px;
+  width: 90%;
+  align-items: center;
+  background-color: var(--warning);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  margin: 12px;
+  border-radius: 12px;
+  opacity: 0.7;
+}
+/*
+LISTA DE CITAS
+*/
+
+.container-cita {
+  position: relative;
+  background-color: rgb(242 254 255);
+  border: #63bbe4 solid 2px;
+  margin: 12px;
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+
+  color: var(--colorTextosBlack);
+}
+
+.container-cita p {
+  font-weight: bold;
+  color: #5f71ad;
+}
+.container-cita p span {
+  font-weight: 200;
+  padding-left: 5px;
+}
+/*BOTON ELIMINAR*/
+.button-delete {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0px;
+  top: -15px;
+  left: calc(100% - 20px);
+  right: -20px;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--warning);
+  border: none;
+  color: var(--white);
+  border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .container--title .title--icon {
+    display: none;
+  }
+  .container--title h1 {
+    font-size: 4rem;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container--form {
+    width: 80%;
+  }
+  .container--list {
+    width: 80%;
+  }
+}
