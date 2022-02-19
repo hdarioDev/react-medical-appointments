@@ -35,11 +35,11 @@ npm run build
 
 ## Screenshots
 
-![App Screenshot](https://raw.githubusercontent.com/hdarioDev/assets/main/appointments.png?token=GHSAT0AAAAAABRDONVRBB4BVQ3B2KUPBUJSYQQHGAA)
+![App Screenshot](https://github.com/hdarioDev/assets/blob/main/appointments-responsive.png?raw=true?raw=true)
 
 ## Responsive
 
-![App Screenshot](https://raw.githubusercontent.com/hdarioDev/assets/main/appointments-responsive.png?token=GHSAT0AAAAAABRDONVRZ6WFTVGVBGZP5PTAYQQHNYQ)
+![App Screenshot](https://github.com/hdarioDev/assets/blob/main/appointments.png?raw=true?raw=true)
 
 ## Authors
 
